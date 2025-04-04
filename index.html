@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packing Checklist Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>📦 Packing Checklist Generator</h1>
+        <button id="dark-mode-toggle">🌞</button>
+    </header>
+
+    <main>
+        <form id="packing-form">
+            <label for="trip-type">Trip Type:</label>
+            <select id="trip-type">
+                <option value="solo">Solo Trip</option>
+                <option value="family">Family Trip</option>
+                <option value="friends">Friends Trip</option>
+            </select>
+
+            <label for="destination-type">Destination Type:</label>
+            <select id="destination-type">
+                <option value="vacation">Vacation Place</option>
+                <option value="religious">Religious Place</option>
+                <option value="adventurous">Adventurous Place</option>
+            </select>
+
+            <label for="accommodation">Accommodation:</label>
+            <select id="accommodation">
+                <option value="hotel">Hotel</option>
+                <option value="hostel">Hostel</option>
+            </select>
+
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" placeholder="Enter city name" required>
+
+            <button type="submit">Generate Checklist</button>
+        </form>
+
+        <div id="weather-info"></div>
+        <div id="things-to-do"></div>
+
+        <section id="checklist-container"></section>
+    </main>
+
+    <button id="scroll-to-top">⬆️</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Header */
+header {
+    background-color: #0097a7;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+}
+
+.dark-mode header {
+    background-color: #121212;
+}
+
+.dark-mode form,
+.dark-mode #weather-info,
+.dark-mode #things-to-do,
+.dark-mode #checklist-container {
+    background-color: #333;
+    color: #f5f5f5;
+    border: 1px solid #444;
+}
+
+.dark-mode select,
+.dark-mode input {
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #666;
+}
+
+.dark-mode button {
+    background-color: #00796b;
+    color: white;
+}
+
+.dark-mode button:hover {
+    background-color: #004d40;
+}
+
+
+/* Form */
+form {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+label, select, input {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+select, input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #00796b;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #004d40;
+}
+
+/* Weather & Things to Do */
+#weather-info, #things-to-do {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Checklist */
+#checklist-container {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Scroll to Top Button */
+#scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4f0f3c;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#scroll-to-top:hover {
+    background-color: #e64a19;
+}
